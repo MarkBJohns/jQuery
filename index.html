@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/jasmine.css" />
+    <link rel="stylesheet" href="app.css">
+    <title>jQuery</title>
+</head>
+<body>
+
+    <h1>jQuery</h1>
+    <hr>
+
+    <ul>Colors
+        <li class="red">Red </li>
+        <li class="green">Green </li>
+        <li class="blue">Blue </li>
+        <li class="purple">Purple </li>
+    </ul>
+    <hr>
+
+    <section>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffx68k-64d91fb4-89ae-4961-b0d5-2892792c3ce4.png/v1/fill/w_1280,h_1280/burned_icon_pokemon_legends_arceus_by_jormxdos_dffx68k-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmeDY4ay02NGQ5MWZiNC04OWFlLTQ5NjEtYjBkNS0yODkyNzkyYzNjZTQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5t-oec5zp6XmcfJuk3LIQmlCkHCljAQvi4wmeeThPFQ" alt="fire-type-icon">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dg5qlxg-4f7de576-00b3-4f50-a2b1-db1c0419fac9.png/v1/fill/w_1280,h_1280/water_type_symbol_paldea_by_jormxdos_dg5qlxg-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGc1cWx4Zy00ZjdkZTU3Ni0wMGIzLTRmNTAtYTJiMS1kYjFjMDQxOWZhYzkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qRdKs6vphQsXjmFcagGeyllK70arGv9XYqoGtCS_IxY" alt="water-type-icon">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dfgb63o-7b3dee8d-149f-4957-a6c0-6894e8858a95.png/v1/fit/w_828,h_828/grass_type_symbol_anime_by_jormxdos_dfgb63o-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZnYjYzby03YjNkZWU4ZC0xNDlmLTQ5NTctYTZjMC02ODk0ZTg4NThhOTUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.yskw3jHwOyeoOpQ-Cn-oPnsQMZUnKJYz3j0mtpCPyRc" alt="grass-type-icon">
+
+    </section>
+    <hr>
+
+    <section id="input">
+        <input type="text" placeholder="This" readonly>
+        <input type="text" placeholder="is" readonly>
+        <input type="text" placeholder="sample" readonly>
+        <input type="text" placeholder="text" readonly>
+    </section>
+    <hr>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, recusandae? At consequuntur dolore aspernatur dicta repellendus! Quos magni in laborum veniam aliquid nesciunt, itaque optio, aperiam consequatur molestiae sapiente veritatis?</p>
+    <hr>
+
+    <section><button>Add input</button></section>
+    <hr>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/jasmine.js"></script>
+	<script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/jasmine-html.js"></script>
+	<script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/boot0.js"></script>
+	<script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/boot1.js"></script>
+
+	<script src="app.js"></script>
+	<script src="app.test.js"></script>
+</body>
+</html>

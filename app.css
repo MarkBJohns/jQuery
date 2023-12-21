@@ -1,0 +1,59 @@
+body{
+    background-color: slategray;
+}
+.red{
+    color: red;
+    cursor: pointer;
+}
+
+.blue{
+    color: blue;
+    cursor: pointer;
+}
+
+.green{
+    color: green;
+    cursor: pointer;
+}
+
+.purple{
+    color: purple;
+    cursor: pointer;
+}
+
+.yellow{
+    color: yellow;
+    cursor: pointer;
+}
+
+.orange{
+    color: orange;
+    cursor: pointer;
+}
+.pink{
+    color: pink;
+    cursor: pointer;
+}
+.brown{
+    color: brown;
+    cursor: pointer;
+}
+img{
+    width: 30vw;
+    aspect-ratio: 1/1;
+}
+input[type='radio']{
+    margin-right: 0;
+}
+#input input{
+    width: 22vw;
+    text-align: center;
+}
+
+.strong-font{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: -2px -2px black;
+}
