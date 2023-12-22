@@ -313,9 +313,28 @@ $('li').append('<input type="radio" name="color"/>');
 $(document).ready(function(){
     $('input[type="radio"]').on('click',function(){
         var className=$(this).parent().attr('class');
-        $('h1').css('background-color',className);
+        $('body').css('background-color',className);
     });
 });
+
+$(document).ready(function(){
+    $('button').eq(0).on('click',function(){
+        $('<img>').attr(darkType).appendTo('section:eq(0)');
+    })
+})
+$(document).ready(function(){
+    $('button').eq(1).on('click',function(){
+        $('<img>').attr(figthingType).appendTo('section:eq(0)');
+    })
+})
+$(document).ready(function(){
+    $('button').eq(2).on('click',function(){
+        $('<img>').attr(dragonType).appendTo('section:eq(0)');
+    })
+})
+
+//      Remember that to create a new html element, all you need is to but the html braces around an html name:
+//      <h1>, <img>, <ul>, etc.
 
 // --------------------------------------------------------------
 
@@ -326,7 +345,7 @@ $(document).ready(function(){
 // Say you have events that are dynamically creating new html elements, such as the 'Add input' button.
 
 $(document).ready(function(){
-    $('button').on('click',function(){
+    $('button').eq(3).on('click',function(){
         $('<input type="text"/>').appendTo('section:eq(2)');
     })
 })
@@ -357,3 +376,53 @@ $(document).ready(function(){
 //      body, allowing us to create as many new inputs as we want without sacrificing the functionality of any
 //      of those inputs. You can use this new middle parameter for a multiple css selectors, includes id's and 
 //      classes.
+
+// ----------------------------------------------------------------------------------------------------------------
+
+//      ANIMATIONS
+
+// --------------------------------------------------------------
+
+// jQ also has an assortment of basic animations that you can tie to simple functions rather than css animation
+//      code. Many also have different parameters, such as 'slow' or 'fast' to determine the speed of the 
+//      animation.
+
+$('body').on('click','img',function(){
+    $(this).fadeOut('slow');
+})
+
+//      Clicking on any of the elemental logos will make them fade slowly out of view...
+
+$('body').on('click','h2',function(){
+    $('img').fadeIn('fast');
+})
+
+//      ... and clicking the headline will cause them all to return.
+
+// Note that these animations don't actually remove the element, they just set display to 'none'. If you
+//      want to completely remove the element, you need to add a remove() method as the parameter:
+
+$('body').on('dblclick','img',function(){
+    $(this).fadeOut(function(){
+        $(this).remove();
+    })
+})
+
+//      Now if you double-click on an image, clicking the headline won't bring it back, because it's 
+//      gone rather than just hidden
+
+
+// If you want access to the more traditional css animation method with all the options that come
+//      with it, you can use the animate() method and set each of the changes as your parameters.
+
+// ----------------------------------------------------------------------------------------------------------------
+
+//      SUMMARY
+
+// --------------------------------------------------------------
+
+// In general, it's not a good idea to rely on jQuery exclusively, but it's a powerful tool that you'll likely run
+//      into at some point, so it makes sense to understand it. It's also useful to quickly create code that you 
+//      want to expand upon later to make sure the base idea works.
+
+// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||

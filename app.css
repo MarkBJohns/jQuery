@@ -1,6 +1,9 @@
 body{
     background-color: slategray;
 }
+ul{
+    background-color: slategray;
+}
 .red{
     color: red;
     cursor: pointer;
@@ -38,12 +41,20 @@ body{
     color: brown;
     cursor: pointer;
 }
+input[type='radio']{
+    margin-right: 0;
+}
+
+h2{
+    cursor: pointer;
+}
 img{
     width: 30vw;
     aspect-ratio: 1/1;
 }
-input[type='radio']{
-    margin-right: 0;
+div button{
+    width: 30vw;
+    align-items: center;
 }
 #input input{
     width: 22vw;
